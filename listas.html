@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Listas en html</title>
+<style type="text/css">
+header  {
+	width: 1200px;
+	height: auto;
+	background-color: #183046;
+	color: #FFFFFF;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+header h1 {
+	color: #FFFFFF;
+	width: 800px;
+	height: 200px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 72px;
+}
+body header, body nav , body main, body footer{
+	width: 1200px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+body nav {
+	background-color: #0F192D;
+	height: 50px;
+	color: #FFFFFF;
+}
+body main {
+	background-color: #96CEF7;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+body main section {
+	width: 800px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+	background-color: #28784F;
+	color: #FFFFFF;
+}
+body footer {
+	background-color: #152B3E;
+	color: #FFFFFF;
+	height: 60px;
+	padding-top: 20px;
+}
+body footer h6 {
+	height: 40px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+main section ol  , main section ul {
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 10px;
+}
+.box_impar {
+	background-color: #060C11;
+}
+#box_unica {
+	background-color: #461818;
+}
+#box_unica #menu_2 li {
+	display: inline-block;
+	background-color: #DFA4A4;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	color: #461818;
+	font-weight: bold;
+}
+#lista_v1 {
+	list-style-type: upper-roman;
+}
+#lista_v2 {
+	list-style-image: url(../images/tocar.png);
+}
+#menu li a:link  , #menu li a:active, #menu li a:visited{
+	padding-right: 5px;
+	padding-left: 5px;
+	border-radius: 5px;
+	border: 5px solid hsla(0,0%,100%,1.00);
+	color: hsla(0,0%,100%,1.00);
+	text-decoration: none;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#menu li a:hover {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: hsla(26,100%,48%,1.00);
+	border: 6px solid hsla(26,100%,48%,1.00);
+	font-weight: bolder;
+}
+#menu li {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <h1>Listas en html</h1>
+</header>
+<nav>
+  <ul id="menu">
+    <li><a href="mi_primer_pagina.html" target="new">Formatos T</a></li>
+    <li><a href="listas.html" target="new">Listas</a></li>
+    <li><a href="enlaces.html" target="new">Enlaces </a></li>
+    <li><a href="tablas.html" target="new">Tablas</a></li>
+    <li><a href="imagenes.html" target="new">Imágenes </a>
+      <li><a href="audio.html" target="new">Audio</a></li>
+      <li><a href="video.html" target="new">Video</a></li>
+      <li><a href="formularios.html" target="new">Formularios </a></li>
+      </li>
+  </ul>
+</nav>
+<main>
+  <section class="box_impar">
+    <h2>Lista ordenada</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus incidunt cupiditate iure soluta odio nobis sapiente, sed! Quasi autem possimus aliquam dolor doloribus consequuntur amet eveniet sint aut a soluta nostrum quibusdam odit rerum exercitationem rem, animi deleniti nulla ipsa. Expedita eveniet laboriosam molestias minima nam fugiat autem earum quos sint totam aspernatur saepe voluptate, optio quidem aperiam placeat nesciunt esse quaerat nemo a odit, quod dolores perspiciatis, similique. Velit praesentium maxime non eligendi, sed quos alias veritatis, soluta eius voluptates ullam impedit quod commodi nisi quis? Voluptas blanditiis eaque obcaecati illo nobis veniam. A itaque est nam cumque quod.</p>
+	  <ol>
+		  <li>Puebla</li>
+		  <li>Veracruz</li>
+		  <li>Tlaxcala</li>
+		  <li>Chiapas</li>
+		  <li>Guanajuato</li>
+	  </ol>
+	  &nbsp;</section>
+<!--shortcut (section>h2+)*5 genera 5 secciones que contienen un texto, un encabezado de nivel 2 y un párrafo-->
+	<section>
+		<h2>Lista desordenada</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque enim voluptatibus ea placeat dicta non sit repellendus quas vero accusamus in assumenda inventore cum nobis dignissimos nostrum, sunt consequuntur fuga sapiente doloribus eius! Cumque eveniet error, nemo ipsa. Ab assumenda, vero mollitia excepturi sit cum, totam suscipit vitae placeat quis libero dolorum magnam repellat consequuntur quas earum, officia dicta eveniet.</p>
+		<ul>
+			<li>México</li>
+			<li>España</li>
+			<li>Estados Unidos</li>
+			<li>Italia</li>
+			<li>Brasil</li>
+		</ul>
+</section>
+<section class="box_impar">
+      <h2>Lista mixta</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid unde vel deleniti sunt, dolor maiores natus pariatur accusamus voluptatem numquam reprehenderit harum architecto, molestiae molestias laborum, quam recusandae ea. Reprehenderit quidem ut odio provident minus quia vel cum magni eaque similique dicta laboriosam placeat, itaque, mollitia, earum tempore minima ipsa. Corporis esse dolorum, facere explicabo beatae in expedita officiis.</p>
+      <ol>
+        <li>México
+          <ul>
+            <li>Puebla</li>
+            <ol>
+              <li>Atlizxo</li>
+              <li>Tepeaca</li>
+            </ol>
+            <li>Veracruz</li>
+          </ul>
+        </li>
+        <li>España</li>
+        <li>Estados Unidos</li>
+        <li>Italia</li>
+        <ol>
+          <li>Toscana</li>
+          <li>Roma</li>
+          <li>Venecia</li>
+        </ol>
+        <li>Brasil</li>
+      </ol>
+  </section>
+<section>
+  <h2>Lista desde Dreamweaver</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, quaerat! Ad quisquam sunt voluptatum ut alias officia veritatis, magnam quibusdam placeat eius error in unde natus, tempore iste. Numquam nobis, vitae corrupti. Laborum maxime distinctio molestiae nostrum unde at quae, atque perspiciatis, laudantium, enim exercitationem dicta voluptatibus quisquam minima, natus amet. Ex, maiores aliquam, commodi porro et suscipit veritatis voluptatibus!</p>
+  <ol id="lista_v2">
+    <li>Margaritas</li>
+    <li>Rosas</li>
+  </ol>
+</section>
+<section id="box_unica">
+  <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ducimus cum iste quis eligendi esse cupiditate fugiat impedit in magni modi officiis earum, rerum quibusdam ipsum, vitae commodi dolore. Accusantium minus quidem eaque quisquam reprehenderit nihil soluta quibusdam, quos, vero voluptate in officiis cupiditate enim nam ex quae perferendis. Laboriosam.</p>
+  <ul id="menu_2">
+    <li><a href="http://www.amazon.com" target="new">Amazon</a></li>
+    <li><a href="http://www.google.com" target="new">Google</a></li>
+    <li><a href="../mi_primer_pagina.html" target="new">Formatos de texto </a></li>
+    <li><a href="http://www.facebook.com" target="new">Facebook</a></li>
+  </ul>
+</section>
+<section>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, minima fugit nemo ipsum eaque, voluptatibus magnam et repellat dolor provident laboriosam unde autem. Rem ut eos pariatur incidunt fuga alias ratione, deleniti ducimus error sequi ipsam aliquid aliquam quod laboriosam exercitationem repellat consequatur officiis totam perspiciatis quos expedita impedit voluptatibus.</p>
+  <ul id="lista_v1">
+    <li> María del Pilar</li>
+    <li>Fatima Pérez</li>
+    <li>Emma Watson</li>
+    <li>Harry Potter </li>
+    <p>Este es el contenido de la etiqueta P de diseño</p>
+    <a href="http://www.facebook.com" target="new"><img src="../images/codigo-de-barras.png" width="64" height="64" alt=""/></a>
+  </ul>
+</section>
+</main>	
+<footer>
+  <h6>Elaborado por Fatima Alhelí Pérez Cirio</h6>
+</footer>
+</body>
+</html>
